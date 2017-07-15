@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  dmall-registry-server:
+      image: 10.204.21.177:5000/dmall/registry-server:latest
+      mem_limit: 512m
+      networks:
+          - jenkins_dmall-network
+      ports:
+          - "8761:8761"
+
+networks:
+  jenkins_dmall-network:
+    external: true

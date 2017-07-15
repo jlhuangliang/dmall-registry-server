@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: registry-server
+  cloud:
+    config:
+      uri: http://dmall-config-server:8888
+
